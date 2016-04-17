@@ -1,0 +1,12 @@
+
+
+<h1>{{ post.title }}</h1>
+<img src="{{ post.photo.url }}" />
+
+<hr/>
+
+{{ post.content }}
+
+<hr/>
+
+<a href="{% url "blog.views.post_list" %}">글목록으로</a>
